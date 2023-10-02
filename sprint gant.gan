@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-07-11" view-index="0" gantt-divider-location="378" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="206" order="0"/>
+        <field id="tpd4" name="Date de début" width="78" order="1"/>
+        <field id="tpd5" name="Date de fin" width="78" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#333333 #ffcc66 #cccccc #99ff99 #ff6666 #9999ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="3" name="Pré-requis - Sprint 0" color="#cccccc" meeting="false" start="2023-07-10" duration="5" complete="0" thirdDate="2023-07-10" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <task id="20" name="Réunion début de projet" color="#333333" meeting="false" start="2023-07-10" duration="1" complete="0" thirdDate="2023-06-30" thirdDate-constraint="0" expand="true"/>
+            <task id="0" name="Création du projet" color="#9999ff" meeting="false" start="2023-07-10" duration="5" complete="0" thirdDate="2023-10-02" thirdDate-constraint="0" expand="true"/>
+            <task id="1" name="Création de la BDD" color="#9999ff" meeting="false" start="2023-07-10" duration="5" complete="0" thirdDate="2023-10-02" thirdDate-constraint="0" expand="true"/>
+            <task id="2" name="Installation des dépendances" color="#9999ff" meeting="false" start="2023-07-10" duration="5" complete="0" thirdDate="2023-10-02" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="4" name="Sprint 1" color="#cccccc" meeting="false" start="2023-07-17" duration="10" complete="0" thirdDate="2023-06-27" thirdDate-constraint="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <task id="21" name="Sprint Planning 1" color="#333333" meeting="false" start="2023-07-17" duration="1" complete="0" thirdDate="2023-07-17" thirdDate-constraint="0" expand="true"/>
+            <task id="5" name="Gestion d'objet" color="#ff6666" meeting="false" start="2023-07-17" duration="7" complete="0" thirdDate="2023-06-27" thirdDate-constraint="0" expand="true"/>
+            <task id="6" name="Gestion des stocks" color="#ff6666" meeting="false" start="2023-07-17" duration="7" complete="0" thirdDate="2023-07-17" thirdDate-constraint="0" expand="true"/>
+            <task id="7" name="Gestion utilisateur" color="#ff6666" meeting="false" start="2023-07-21" duration="6" complete="0" thirdDate="2023-07-17" thirdDate-constraint="0" expand="true"/>
+            <task id="24" name="Retrospective 1" color="#333333" meeting="false" start="2023-07-28" duration="1" complete="0" thirdDate="2023-07-17" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="8" name="Sprint 2" color="#cccccc" meeting="false" start="2023-07-31" duration="10" complete="0" thirdDate="2023-06-27" thirdDate-constraint="0" expand="true">
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <task id="22" name="Sprint Planning 2" color="#333333" meeting="false" start="2023-07-31" duration="1" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="9" name="Connection" color="#99ff99" meeting="false" start="2023-07-31" duration="4" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="10" name="Lancer mise à jour stocks" color="#99ff99" meeting="false" start="2023-07-31" duration="4" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="12" name="Impression OP-Stock" color="#99ff99" meeting="false" start="2023-08-04" duration="3" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="13" name="Impression Admin" color="#99ff99" meeting="false" start="2023-08-04" duration="3" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="17" name="Impression OP-Colis" color="#99ff99" meeting="false" start="2023-08-09" duration="3" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="16" name="Extraire statistiques" color="#99ff99" meeting="false" start="2023-08-11" duration="1" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="25" name="Retrospective 2" color="#333333" meeting="false" start="2023-08-11" duration="1" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="18" name="Sprint 3" color="#cccccc" meeting="false" start="2023-08-14" duration="10" complete="0" thirdDate="2023-07-12" thirdDate-constraint="0" expand="true">
+            <task id="23" name="Sprint Planning 3" color="#333333" meeting="false" start="2023-08-14" duration="1" complete="0" thirdDate="2023-08-14" thirdDate-constraint="0" expand="true"/>
+            <task id="11" name="Créer une commande Boutique" color="#ffcc66" meeting="false" start="2023-08-14" duration="5" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="15" name="Activer newsletter" color="#ffcc66" meeting="false" start="2023-08-14" duration="4" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" name="Envoie mailing commande" color="#ffcc66" meeting="false" start="2023-08-18" duration="3" complete="0" thirdDate="2023-07-31" thirdDate-constraint="0" expand="true"/>
+            <task id="19" name="Tests de l'application" color="#ffcc66" meeting="false" start="2023-08-21" duration="5" complete="0" thirdDate="2023-08-14" thirdDate-constraint="0" expand="true"/>
+            <task id="26" name="Retrospective 3" color="#333333" meeting="false" start="2023-08-25" duration="1" complete="0" thirdDate="2023-08-14" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
